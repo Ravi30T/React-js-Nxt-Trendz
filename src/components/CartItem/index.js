@@ -56,6 +56,7 @@ const CartItem = props => (
             <div className="cart-quantity-container">
               <button
                 type="button"
+                aria-label="BsDashSquare"
                 className="quantity-controller-button"
                 onClick={decreaseCartItemQuantity}
                 data-testid="minus"
@@ -65,6 +66,7 @@ const CartItem = props => (
               <p className="cart-quantity">{quantity}</p>
               <button
                 type="button"
+                aria-label="BsPlusSquare"
                 className="quantity-controller-button"
                 onClick={increaseCartItemQuantity}
                 data-testid="plus"
@@ -85,6 +87,7 @@ const CartItem = props => (
           </div>
           <button
             className="delete-button"
+            aria-label="remove-all"
             type="button"
             onClick={onRemoveCartItem}
             data-testid="remove"

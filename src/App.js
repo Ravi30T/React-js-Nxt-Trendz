@@ -85,10 +85,9 @@ class App extends Component {
         value={{
           cartList,
           addCartItem: this.addCartItem,
-          removeCartItem: this.removeCartItem,
+          removeCartItem: this.onRemoveEachCartItem,
           incrementCartItemQuantity: this.onIncrementCartItem,
           decrementCartItemQuantity: this.onDecrementCartItem,
-          removeCartItem: this.onRemoveEachCartItem,
           removeAllCartItems: this.removeAllCartItems,
         }}
       >

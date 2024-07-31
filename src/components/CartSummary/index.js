@@ -12,8 +12,10 @@ const CartSummary = () => (
     {value => {
       const {cartList} = value
       const totalBill = () => {
-        let totalBillAmount = 0
-        cartList.map(each => (totalBillAmount += each.quantity * each.price))
+        const totalBillAmount = cartList.reduce(
+          (acc, item) => acc + item.quantity * item.price,
+          0,
+        )
         return totalBillAmount
         // const {quantity, price} = cartList[0]
       }
