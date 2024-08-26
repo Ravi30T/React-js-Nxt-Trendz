@@ -80,3 +80,25 @@
   font-weight: 500;
   font-family: 'Roboto';
 }
+
+@media (max-width: 767px) {
+  .payments-container {
+    padding: 15px;
+  }
+  .payments-heading {
+    font-size: 22px;
+  }
+
+  .payments-sub-heading {
+    font-size: 15px;
+  }
+
+  .payment-method-input {
+    height: 10px;
+    width: 10px;
+  }
+
+  .payment-method-label {
+    font-size: 12px;
+  }
+}

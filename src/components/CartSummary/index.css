@@ -38,3 +38,10 @@
 .popup-overlay {
   background: rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 767px) {
+  .popup-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+}
